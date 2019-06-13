@@ -38,14 +38,20 @@ I trained the model for 3 times (3 epoch) and estimated the validation datasets 
 - al : K-means active learning
 - us : Uncertainty sampling (Margin sampling)
 
-<img src = "assets/markdown-img-paste-20190612180042494.png">
+<img src = "assets/markdown-img-paste-20190613123656650.png">
 
 ### English Movie review data performance (Validation Accuracy)
 - random : random sampling
 - al : K-means active learning
 - us : Uncertainty sampling (Margin sampling)
 
-<img src = "assets/markdown-img-paste-20190612180309286.png">
+<img src ="assets/markdown-img-paste-20190613123715714.png">
+
+### Conclusion and Further works
+
+K-means Mini-batch algorithm is better than random sampling and margin sampling.
+Then, how about adjusting other uncertainty sampling into K-means algorithm such as LC sampling or entropy sampling.
+And, I'm gonna experiments more difficult task such as multi-class classification (ex. yelp)
 
 ### Issue
 ```
