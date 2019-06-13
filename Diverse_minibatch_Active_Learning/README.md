@@ -38,14 +38,14 @@ I trained the model for 3 times (3 epoch) and estimated the validation datasets 
 - al : K-means active learning
 - us : Uncertainty sampling (Margin sampling)
 
-<img src = "assets/markdown-img-paste-20190613123656650.png">
+<img src = "assets/markdown-img-paste-20190613210034162.png">
 
 ### English Movie review data performance (Validation Accuracy)
 - random : random sampling
 - al : K-means active learning
 - us : Uncertainty sampling (Margin sampling)
 
-<img src ="assets/markdown-img-paste-20190613123715714.png">
+<img src ="assets/markdown-img-paste-20190613210011580.png">
 
 ### Conclusion and Further works
 
