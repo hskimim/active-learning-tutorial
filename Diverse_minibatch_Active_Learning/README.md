@@ -22,10 +22,11 @@ Please check this path if you want more detail about preprocessing.
 
 ### Experiments
 
-First of all, I did three different experiments.
-- [K-means Active Learning](https://github.com/hskimim/active-learning-tutorial/blob/master/Diverse_minibatch_Active_Learning/k%3D1000%2Cbeta%3D10.ipynb)
-- [Random Sampling](https://github.com/hskimim/active-learning-tutorial/blob/master/Diverse_minibatch_Active_Learning/random_sampling.ipynb)
-- [Margin Sampling](https://github.com/hskimim/active-learning-tutorial/blob/master/Diverse_minibatch_Active_Learning/margin_sampling.ipynb)
+First of all, I did four different experiments.
+- [English_K-means Active Learning(paper replicate)](https://github.com/hskimim/active-learning-tutorial/blob/master/Diverse_minibatch_Active_Learning/Diverse%20mini-batch%20Acitve%20Learning(paper%20replicate).ipynb)
+- [Random Sampling](https://github.com/hskimim/active-learning-tutorial/tree/master/Diverse_minibatch_Active_Learning/ENG_experiments)
+- [Margin Sampling](https://github.com/hskimim/active-learning-tutorial/tree/master/Diverse_minibatch_Active_Learning/ENG_experiments)
+- [K-means with embedding(sum and mean)](https://github.com/hskimim/active-learning-tutorial/tree/master/Diverse_minibatch_Active_Learning/ENG_experiments)
 
 Operating mini-batch Active Learning by using weighted K-means algorithm. Comparison methodology is "random sampling", "margin sampling"(vanilla active learning)
 
@@ -35,27 +36,32 @@ I trained the model for 3 times (3 epoch) and estimated the validation datasets 
 
 ### Korean Movie review data performance (Validation Accuracy)
 - random : random sampling
-- al : K-means active learning
+- no_embedding : K-means active learning(paper)
 - us : Uncertainty sampling (Margin sampling)
+- sum : K-means active learning with embedding(sum)
+- mean : K-means active learning with embedding(mean)
 
-<img src = "assets/markdown-img-paste-20190613210034162.png">
+<img src = 'assets/markdown-img-paste-20190614160248702.png'>
 
 ### English Movie review data performance (Validation Accuracy)
 - random : random sampling
-- al : K-means active learning
+- no_embedding : K-means active learning(paper)
 - us : Uncertainty sampling (Margin sampling)
+- sum : K-means active learning with embedding(sum)
+- mean : K-means active learning with embedding(mean)
 
-<img src ="assets/markdown-img-paste-20190613210011580.png">
+<img src ="assets/markdown-img-paste-20190614160255840.png">
 
 ### Conclusion and Further works
 
-K-means Mini-batch algorithm is better than random sampling and margin sampling.
-Then, how about adjusting other uncertainty sampling into K-means algorithm such as LC sampling or entropy sampling.
-And, I'm gonna experiments more difficult task such as multi-class classification (ex. yelp)
+In case of Korean, K-means active learning with embeeding(sum) had the highest performance. And In case of English, K-means active learning with embedding(mean) had the highest performance. There was not big difference between paper's performance. But sightly better than paper's in both case. I thought that if the length of sentence is long, then embedding with mean is more proper than sum. (English's max length : 100, Korean's max length : 25)
+
+I guess that the gap between the performance is getting larger if experiments is more difficult task such as multi-class classification (ex. yelp)
 
 ### Issue
 ```
-The hyperparameter I applied is k = 1000, beta = 10. Other hyperparameter can change the result for sure.   
+The hyperparameter I applied is k = 1000, beta = 10.
+Other hyperparameter can change the result for sure.   
 ```
 ```
 I don't know why random sampling's validation accuracy is so high.
