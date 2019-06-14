@@ -24,9 +24,9 @@ Please check this path if you want more detail about preprocessing.
 
 First of all, I did four different experiments.
 - [English_K-means Active Learning(paper replicate)](https://github.com/hskimim/active-learning-tutorial/blob/master/Diverse_minibatch_Active_Learning/Diverse%20mini-batch%20Acitve%20Learning(paper%20replicate).ipynb)
-- [Random Sampling](https://github.com/hskimim/active-learning-tutorial/tree/master/Diverse_minibatch_Active_Learning/ENG_experiments)
-- [Margin Sampling](https://github.com/hskimim/active-learning-tutorial/tree/master/Diverse_minibatch_Active_Learning/ENG_experiments)
-- [K-means with embedding(sum and mean)](https://github.com/hskimim/active-learning-tutorial/tree/master/Diverse_minibatch_Active_Learning/ENG_experiments)
+- [Random Sampling](https://github.com/hskimim/active-learning-tutorial/blob/master/Diverse_minibatch_Active_Learning/ENG_experiments/random_sampling_with_embedding.ipynb)
+- [Margin Sampling](https://github.com/hskimim/active-learning-tutorial/blob/master/Diverse_minibatch_Active_Learning/ENG_experiments/uncertainty_sampling_with_embedding.ipynb)
+- [K-means with embedding(sum and mean)](https://github.com/hskimim/active-learning-tutorial/blob/master/Diverse_minibatch_Active_Learning/ENG_experiments/k%3D1000%2Cbeta%3D10_with_embedding(ENG).ipynb)
 
 Operating mini-batch Active Learning by using weighted K-means algorithm. Comparison methodology is "random sampling", "margin sampling"(vanilla active learning)
 
