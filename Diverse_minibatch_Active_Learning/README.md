@@ -60,7 +60,9 @@ I trained the model for 3 times (3 epoch) and estimated the validation datasets 
 
 ![](assets/markdown-img-paste-20190616181833133.png)
 
-The plot behind is quite strange, and the reason that the mean method does not work well is because of the nature of the HAN model, it uses mainly the attachment layer rather than the embedding. Since embedding is used in the word encoder part of the lowest level, I think it is necessary to try the weight matrix of the attachment layer in case of HAN network. On the other hand, the method presented in the paper can confirm robustly ascending validation accuracy.
+The plot behind is quite strange, and the reason that the mean method does not work well is because of the nature of the HAN model, it uses mainly the attachment layer rather than the embedding. Since embedding is used in the word encoder part of the lowest level, I thought it is because I should have tried the weight matrix of the attention layer in case of HAN network. But, as you can see below plot, there was no significant advance in performance unfortunately.
+
+![](assets/markdown-img-paste-2019061703374183.png)
 
 ### Conclusion and Further works
 
