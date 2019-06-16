@@ -52,11 +52,19 @@ I trained the model for 3 times (3 epoch) and estimated the validation datasets 
 
 <img src ="assets/markdown-img-paste-20190614160255840.png">
 
+### HAN(Hierarchical Attention network) yelp review data performance (Validation Accuracy)
+- random : random sampling
+- no_embedding : K-means active learning(paper)
+- us : Uncertainty sampling (Margin sampling)
+- mean : K-means active learning with embedding(mean)
+
+![](assets/markdown-img-paste-20190616153641330.png)
+
+The plot behind is quite strange, and the reason that the mean method does not work well is because of the nature of the HAN model, it uses mainly the attachment layer rather than the embedding. Since embedding is used in the word encoder part of the lowest level, I think it is necessary to try the weight matrix of the attachment layer in case of HAN network. On the other hand, the method presented in the paper can confirm robustly ascending validation accuracy.
+
 ### Conclusion and Further works
 
 In case of Korean, K-means active learning with embeeding(sum) had the highest performance. And In case of English, K-means active learning with embedding(mean) had the highest performance. There was not big difference between paper's performance. But sightly better than paper's in both case. I thought that if the length of sentence is long, then embedding with mean is more proper than sum. (English's max length : 100, Korean's max length : 25)
-
-I guess that the gap between the performance is getting larger if experiments is more difficult task such as multi-class classification (ex. yelp)
 
 ### Issue
 ```
