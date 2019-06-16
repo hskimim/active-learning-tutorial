@@ -50,7 +50,7 @@ I trained the model for 3 times (3 epoch) and estimated the validation datasets 
 - sum : K-means active learning with embedding(sum)
 - mean : K-means active learning with embedding(mean)
 
-<img src ="assets/markdown-img-paste-20190614160255840.png">
+![](assets/markdown-img-paste-20190616154102656.png)
 
 ### HAN(Hierarchical Attention network) yelp review data performance (Validation Accuracy)
 - random : random sampling
